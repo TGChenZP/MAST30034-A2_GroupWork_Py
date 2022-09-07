@@ -5,6 +5,10 @@ import collections
 import regex as re
 import pandas as pd
 
+# *************************************************************************
+# code cleaness will be resolve sometime
+# *************************************************************************
+
 print("RUNNING PYSPARK\n\n")
 spark = (
     SparkSession.builder.appName("preprocessing of taxi data")
@@ -16,6 +20,7 @@ spark = (
 )
 print("\n\nSUCCESSFUL RUN PYSPARK\n")
 
+# being magic number-haha
 i = 6
 while(i):
     try:
