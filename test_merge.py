@@ -1,2 +1,2 @@
 print('hi')
-print('ads is fun')
+print('ads is not fun')
