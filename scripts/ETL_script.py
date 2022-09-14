@@ -5,10 +5,7 @@ import collections
 import re
 import pandas as pd
 
-# *************************************************************************
-# code cleaness will be resolve sometime
-# *************************************************************************
-
+# Running spark
 print("RUNNING PYSPARK\n\n")
 spark = (
     SparkSession.builder.appName("preprocessing of taxi data")
@@ -20,9 +17,9 @@ spark = (
 )
 print("\n\nSUCCESSFUL RUN PYSPARK\n")
 
-# being magic number-haha
-i = 6
-while(i):
+# five tries for entering correct file name
+tries = 6
+while(tries):
     try:
         #transactions_20210828_20220227_snapshot
         #transactions_20210228_20210827_snapshot
@@ -31,9 +28,9 @@ while(i):
     except:
         print("FILENAME ERROR, FILE NOT READ")
         print("TRYA AGAIN")
-        i -= 1
-        print(str(i) + " MORE TRIES")
-        if not i:
+        tries -= 1
+        print(str(tries) + " MORE TRIES")
+        if not tries:
             print("FAILED, RERUN SCRIPT")
             break
     else:
@@ -78,10 +75,13 @@ def clean_str(str):
     str = str.lower()
     return str
 
+# cleaning merchant and take rate and revenune level.
 merchant_sdf = merchant_sdf.withColumn('prod_desc', clean_str(F.col('prod_desc')))
 merchant_sdf = merchant_sdf.withColumn('take_rate', clean_str(F.col('take_rate')))
-merchant_sdf = merchant_sdf.withColumn('take_rate', F.regexp_extract('take_rate', '\\d*\\.\\d', 0))
 merchant_sdf = merchant_sdf.withColumn('revenue_level', clean_str(F.col('revenue_level')))
+# extracting take rate and changing it to double.
+merchant_sdf = merchant_sdf.withColumn('take_rate', F.regexp_extract('take_rate', '\\d*\\.\\d', 0))
+merchant_sdf = merchant_sdf.withColumn('take_rate', F.col('take_rate').cast('double'))
 merchant_sdf = merchant_sdf.drop("tags")
 
 
@@ -126,6 +126,7 @@ join_missing.show()
 
 flag = str(input("SAVE FILES? ENTER YES OR NO: "))
 
+# code to save file
 if flag == "YES":
     nametosave = str(input("ENTER NAME TO SAVE: "))
     print("FILE WILL BE SAVE IN data/tables/curated")
