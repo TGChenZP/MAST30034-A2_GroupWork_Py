@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
-from pyspark.sql.types import StringType
+from pyspark.sql.types import StringType, FloatType
 import collections
 import re
 import pandas as pd
@@ -80,8 +80,10 @@ def clean_str(str):
 
 merchant_sdf = merchant_sdf.withColumn('prod_desc', clean_str(F.col('prod_desc')))
 merchant_sdf = merchant_sdf.withColumn('take_rate', clean_str(F.col('take_rate')))
+merchant_sdf = merchant_sdf.withColumn('take_rate', F.regexp_extract('take_rate', '\\d*\\.\\d', 0))
 merchant_sdf = merchant_sdf.withColumn('revenue_level', clean_str(F.col('revenue_level')))
 merchant_sdf = merchant_sdf.drop("tags")
+
 
 print("FINISH MERCHANT PROCESS\n\n")
 
