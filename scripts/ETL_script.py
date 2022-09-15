@@ -77,9 +77,13 @@ def clean_str(str):
 
 # cleaning merchant and take rate and revenune level.
 merchant_sdf = merchant_sdf.withColumn('prod_desc', clean_str(F.col('prod_desc')))
+# removing extra spaces
+merchant_sdf = merchant_sdf.withColumn("prod_desc", F.regexp_replace("prod_desc", r' +', ' '))
+
 merchant_sdf = merchant_sdf.withColumn('take_rate', clean_str(F.col('take_rate')))
 merchant_sdf = merchant_sdf.withColumn('revenue_level', clean_str(F.col('revenue_level')))
 # extracting take rate and changing it to double.
+
 merchant_sdf = merchant_sdf.withColumn('take_rate', F.regexp_extract('take_rate', '\\d*\\.\\d', 0))
 merchant_sdf = merchant_sdf.withColumn('take_rate', F.col('take_rate').cast('double'))
 merchant_sdf = merchant_sdf.drop("tags")
