@@ -29,14 +29,24 @@ Basic Feature Engineering
     Note: the second half of the notebook uses imputed missing take rates - an output of clustering. But clustering used outputs from the first half of the notebook. SO: please run up to the line, and then run the clustering scripts, then come back to rerun the whole R_9 file.
 
 Clustering (for missing take rate imputation AND task of creating 3-5 separate business classes)
+- 13. A_Y_H_2_classify_merchant_model.ipynb
+- 14. A_Y_H_Cluster.ipynb
+- 15. C_5_tally_merchant_cluster.ipynb
+- 16. C_6_marginal_dist_cluster.ipynb
+- 17. R_9_combine_take_rate_and_imputed_take_rate.ipynb
 
 Persona Data
+- 18. R_1_clean_occupation.ipynb
+- 19. R_2_postcode_total.ipynb
+- 20. Y_1_income_clean.ipynb
+- 21. A_4_ranking_feature_engineering.ipynb
+- 22. A_Y_H_persona.score.ipynb
 
 
 Growth Rate
-- . R_C_11_future_return_prediction.ipynb
-- . R_12_get_growth.ipynb
+- 23. R_C_11_future_return_prediction.ipynb
+- 24. R_12_get_growth.ipynb
 - (Not included: C_7 which was a backup plan for R_12_get_growth.ipynb)
 
 Final Model
-- . R_13_final_model.ipynb
+- 25. R_13_final_model.ipynb
