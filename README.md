@@ -5,6 +5,7 @@ Note to groups: Make sure to read the `README.md` located in `./data/README.md` 
 
 
 **Notebooks**
+
 ETL and external data
 ./scripts/
 - 1. ETL_script.py            checkpoint: merge original dataset
