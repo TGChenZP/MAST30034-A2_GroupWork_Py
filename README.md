@@ -7,8 +7,8 @@ Please run the following files in-order, to ensure correct outputs
 
 ETL and external data
 ./scripts/
-- 1.  `1_A_ETL_script.py`            checkpoint: merge original dataset
-- 2.  `2_H_Download.py`              checkpoint: download external data using script. 
+- 1.  `1_A_ETL_script.py`              
+- 2.  `2_H_Download.py`               
 
 **Note:** For the ETL script, please enter the desire transaction snapshot, to run 4_A_simple_analysis.ipynb
 
@@ -54,3 +54,46 @@ Growth Rate
 
 Final Model
 - 25. `25_R_final_model.ipynb`
+
+### ** Weekly Checkpoints
+Here indicates which notebooks are used to fullfil each weekly checkpoint  
+
+- Sprint 1
+- -  `1_A_ETL_script.py`    
+- -  `2_H_Download.py` 
+
+- Sprint 2
+- -  `3_A_understand_data.ipynb`
+- -  `4_A_simple_analysis.ipynb`
+- - `13_H_C_A_cluster_data_prep.ipynb`
+- - `14_H_C_A_cluster.ipynb`
+- - `15_C_tally_merchant_cluster.ipynb`
+- - `16_C_marginal_dist_cluster.ipynb`
+- - `17_R_combine_take_rate_and_imputed_take_rate.ipynb`
+
+- Sprint 3
+- -  `5_A_fraud_data_quick_look.ipynb`
+- -  `6_R_C_fraud_inspect.ipynb`
+- -  `7_R_C_fraud_data_clean.ipynb`
+- -  `9_R_C_fraud_model_merchant.ipynb`
+- - `10_R_C_RFR consumer.ipynb`
+- - `11_R_C_consumer runthrough.ipynb`
+
+- Sprint 4
+- - `12_R_aggregate_transact_data_withTakeRate.ipynb`  
+- - `18_R_clean_occupation.ipynb`
+- - `19_R_postcode_total.ipynb`
+- - `20_Y_income_clean.ipynb`
+- - `21_A_ranking_feature_engineering.ipynb`
+- - `22_Y_H_A_persona_score.ipynb`
+- - `23_C_R_future_return_prediction.ipynb`
+- - `24_C_R_get_growth.ipynb`
+
+- Sprint 5
+- - `14_H_C_A_cluster.ipynb`
+
+- Sprint 6
+- - `25_R_final_model.ipynb`
+
+- Sprint 7 
+- - `26_A_R_summary_notebook.ipynb`
