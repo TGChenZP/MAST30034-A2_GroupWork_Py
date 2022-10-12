@@ -1,13 +1,12 @@
 # Generic Buy Now, Pay Later Project
 
-### **Notebooks**
 `26_A_R_summary_notebook.ipynb` summarizes our group's solution to the BNPL problem, and presents findings.
 
 Please run the following files in-order, to ensure correct outputs
 
 ETL and external data
 ./scripts/
-- 1.  `1_A_ETL_script.py`              
+- 1.  `1_A_ETL_script.py`            
 - 2.  `2_H_Download.py`               
 
 **Note:** For the ETL script, please enter the desire transaction snapshot, to run 4_A_simple_analysis.ipynb
@@ -55,8 +54,8 @@ Growth Rate
 Final Model
 - 25. `25_R_final_model.ipynb`
 
-### ** Weekly Checkpoints
-Here indicates which notebooks are used to fullfil each weekly checkpoint  
+### ** Weekly Checkpoints **
+Here indicates which notebooks are used to fullfil each weekly checkpoint according to provided specification.
 
 - Sprint 1
 - -  `1_A_ETL_script.py`    
