@@ -26,33 +26,34 @@ Fraud
 
 
 Basic Feature Engineering
-- 12. `12_R_aggregate_transact_data_withTakeRate.ipynb`  
+- 12. `12_R_aggregate_transact_data_withTakeRate.ipynb`: Conduct aggregation to group transaction data to fortnights which outputs datasets require for notebooks below, and output the first three feature for our final model.  
+
 **Note:** the second half of the notebook uses imputed missing take rates - an output of clustering. But clustering used outputs from the first half of the notebook. SO: please run up to the line, and then run the clustering scripts, then come back to rerun the whole R_9 file.
 
 
 Clustering (for missing take rate imputation AND task of creating 3-5 separate business classes)
-- 13. `13_H_C_A_cluster_data_prep.ipynb`
-- 14. `14_H_C_A_cluster.ipynb`
-- 15. `15_C_tally_merchant_cluster.ipynb`
-- 16. `16_C_marginal_dist_cluster.ipynb`
-- 17. `17_R_combine_take_rate_and_imputed_take_rate.ipynb`
+- 13. `13_H_C_A_cluster_data_prep.ipynb`: Prepare clustering datasets.
+- 14. `14_H_C_A_cluster.ipynb`: Conduct clustering for take rate imputation and segmentation.
+- 15. `15_C_tally_merchant_cluster.ipynb`: Generate an overview of the merchants in the clusters.
+- 16. `16_C_marginal_dist_cluster.ipynb`: Plots the marginal distributions of the clusters to gain a better understanding for possible further analysis.
+- 17. `17_R_combine_take_rate_and_imputed_take_rate.ipynb`: Fill in the merchants with missing take rates using the cluster result.
 
 
 Persona Data
-- 18. `18_R_clean_occupation.ipynb`
-- 19. `19_R_postcode_total.ipynb`
-- 20. `20_Y_income_clean.ipynb`
-- 21. `21_A_ranking_feature_engineering.ipynb`
-- 22. `22_Y_H_A_persona_score.ipynb`
+- 18. `18_R_clean_occupation.ipynb`: Cleans the occupation ABS dataset.
+- 19. `19_R_postcode_total.ipynb`: Gets frequency for each postcode of the cleaned occupation dataset.
+- 20. `20_Y_income_clean.ipynb`: Cleans the occupation income dataset.
+- 21. `21_A_ranking_feature_engineering.ipynb`: Generates the 4th feature for the final model.
+- 22. `22_Y_H_A_persona_score.ipynb`: Generates the 5th feature for the final model.
 
 
 Growth Rate
-- 23. `23_C_R_future_return_prediction.ipynb`
-- 24. `24_C_R_get_growth.ipynb`
+- 23. `23_C_R_future_return_prediction.ipynb`: Trains the dateset to give future growth of a merchant revenue.
+- 24. `24_C_R_get_growth.ipynb`: Obtains predicted future growth of a merchant revenue.
 
 
 Final Model
-- 25. `25_R_final_model.ipynb`
+- 25. `25_R_final_model.ipynb`: Trains and test the final model, using the previous result, to generate the top 100 merchants to recommend to the BNPL firm.
 
 ### ** Weekly Checkpoints **
 Here indicates which notebooks are used to fullfil each weekly checkpoint according to provided specification.
