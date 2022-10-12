@@ -1,15 +1,16 @@
 # Generic Buy Now, Pay Later Project
 
 ### **Notebooks**
+`26_A_R_summary_notebook.ipynb` summarizes our group's solution to the BNPL problem, and presents findings.
 
-Please run the following files inorder, to ensure correct outputs
+Please run the following files in-order, to ensure correct outputs
 
 ETL and external data
 ./scripts/
 - 1.  `1_A_ETL_script.py`            checkpoint: merge original dataset
 - 2.  `2_H_Download.py`              checkpoint: download external data using script. 
 
-For the ETL script, please enter the desire transaction snapshot, to run 4_A_simple_analysis.ipynb
+**Note:** For the ETL script, please enter the desire transaction snapshot, to run 4_A_simple_analysis.ipynb
 
 EDA + first inspect of data
 - 3.  `3_A_understand_data.ipynb`
@@ -26,8 +27,8 @@ Fraud
 
 
 Basic Feature Engineering
-- 12. `12_R_aggregate_transact_data_withTakeRate.ipynb`  #TODO: 改input file generate时候的output
-    Note: the second half of the notebook uses imputed missing take rates - an output of clustering. But clustering used outputs from the first half of the notebook. SO: please run up to the line, and then run the clustering scripts, then come back to rerun the whole R_9 file.
+- 12. `12_R_aggregate_transact_data_withTakeRate.ipynb`  
+**Note:** the second half of the notebook uses imputed missing take rates - an output of clustering. But clustering used outputs from the first half of the notebook. SO: please run up to the line, and then run the clustering scripts, then come back to rerun the whole R_9 file.
 
 
 Clustering (for missing take rate imputation AND task of creating 3-5 separate business classes)
