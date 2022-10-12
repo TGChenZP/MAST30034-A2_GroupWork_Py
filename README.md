@@ -6,23 +6,23 @@ Please run the following files in-order, to ensure correct outputs
 
 ETL and external data
 ./scripts/
-- 1.  `1_A_ETL_script.py`            
-- 2.  `2_H_Download.py`               
+- 1.  `1_A_ETL_script.py`: This joins the desire trasaction dataset and returns a cleaned joined dataset, containing all merchant, consumer and transaction information.          
+- 2.  `2_H_Download.py`: This downloads the external datasets and store it in ./data/raw/external_datasets.            
 
 **Note:** For the ETL script, please enter the desire transaction snapshot, to run 4_A_simple_analysis.ipynb
 
 EDA + first inspect of data
-- 3.  `3_A_understand_data.ipynb`
-- 4.  `4_A_simple_analysis.ipynb`
-- 5.  `5_A_fraud_data_quick_look.ipynb`
+- 3.  `3_A_understand_data.ipynb`: This provide a quick inspection on the provided transaction related datasets.
+- 4.  `4_A_simple_analysis.ipynb`: Perform a simple analysis on the provided datasets, tries and deal with null values.
+- 5.  `5_A_fraud_data_quick_look.ipynb`: This provide a quick inspection on the provided fraud related datasets.
 
 Fraud
-- 6.  `6_R_C_fraud_inspect.ipynb`
-- 7.  `7_R_C_fraud_data_clean.ipynb`
-- 8.  `8_R_C_fraud_model_consumer.ipynb`
-- 9.  `9_R_C_fraud_model_merchant.ipynb`
-- 10. `10_R_C_RFR consumer.ipynb`
-- 11. `11_R_C_consumer runthrough.ipynb`
+- 6.  `6_R_C_fraud_inspect.ipynb`: This provide a quick inspection on the provided fraud related datasets, with descriptive statistics.
+- 7.  `7_R_C_fraud_data_clean.ipynb`: Generate the dataset of engineered features require for training the fraud detector models.
+- 8.  `8_R_C_fraud_model_consumer.ipynb`: Testing different regression models to construct a consumer fraud detector.
+- 9.  `9_R_C_fraud_model_merchant.ipynb`: Testing different regression models to construct a merchant fraud detector.
+- 10. `10_R_C_RFR consumer.ipynb`: Tunning the consumer fraud detector model.
+- 11. `11_R_C_consumer runthrough.ipynb`: Run the consumer fraud detector model on the full transaction dataset, and remove transaction data according to analysed boundaries.
 
 
 Basic Feature Engineering
