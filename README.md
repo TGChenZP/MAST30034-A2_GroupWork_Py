@@ -43,8 +43,8 @@ Please run the following files **in-order**, to ensure correct outputs.
 
 
 ### Clustering (for missing take rate imputation AND task of creating 3-5 separate business classes)
-- 13. `13_H_C_A_cluster_data_prep.ipynb`: Prepare clustering datasets.
-- 14. `14_H_C_A_cluster.ipynb`: Conduct clustering for take rate imputation and segmentation.
+- 13. `13_H_Y_A_cluster_data_prep.ipynb`: Prepare clustering datasets.
+- 14. `14_H_Y_A_cluster.ipynb`: Conduct clustering for take rate imputation and segmentation.
 - 15. `15_C_tally_merchant_cluster.ipynb`: Generate an overview of the merchants in the clusters.
 - 16. `16_C_marginal_dist_cluster.ipynb`: Plot the marginal distributions of the clusters to gain a better understanding for possible further analysis.
 - 17. `17_R_combine_take_rate_and_imputed_take_rate.ipynb`: Fill in the merchants with missing take rates using the cluster result.
@@ -58,7 +58,7 @@ Please run the following files **in-order**, to ensure correct outputs.
 - 22. `22_Y_H_A_persona_score.ipynb`: Generate the 5th feature for the final model.
 
 
-### Growth Rate
+### Growth Rate (ultimately not used in modelw)
 - 23. `23_C_R_future_return_prediction.ipynb`: Train the dateset to give future growth of a merchant revenue.
 - 24. `24_C_R_get_growth.ipynb`: Predict the future growth of a merchant revenue.
 
@@ -76,8 +76,8 @@ Here indicates which notebooks are used to fullfil each weekly checkpoint accord
 - Sprint 2
   -  `3_A_understand_data.ipynb`
   -  `4_A_simple_analysis.ipynb`
-  - `13_H_C_A_cluster_data_prep.ipynb`
-  - `14_H_C_A_cluster.ipynb`
+  - `13_H_Y_A_cluster_data_prep.ipynb`
+  - `14_H_Y_A_cluster.ipynb`
   - `15_C_tally_merchant_cluster.ipynb`
   - `16_C_marginal_dist_cluster.ipynb`
   - `17_R_combine_take_rate_and_imputed_take_rate.ipynb`
