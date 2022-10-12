@@ -132,9 +132,9 @@ flag = str(input("SAVE FILES? ENTER YES OR NO: "))
 
 # code to save file
 if flag == "YES":
-    nametosave = str(input("ENTER NAME TO SAVE: "))
     print("FILE WILL BE SAVE IN data/tables/curated")
-    join_sdf.write.mode('overwrite').parquet('../data/curated/' + nametosave)
+    nametosave = file_to_read + "_all_details"
+    join_sdf.write.mode('overwrite').parquet('../data/curated/' + file_to_read + "_all_details")
     missing_count_save_name = nametosave + "_missing_counts"
     print("MISSING VALUE COUNTS WILL BE SAVE AS " + missing_count_save_name)
     join_missing.write.mode('overwrite').parquet('../data/curated/' + missing_count_save_name)
