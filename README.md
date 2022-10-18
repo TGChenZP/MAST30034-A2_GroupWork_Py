@@ -27,7 +27,7 @@ Please run the following files **in-order**, to ensure correct outputs.
 - 1.  `1_A_ETL_script.py`: Join the desired trasaction dataset and returns a cleaned joined dataset, containing all merchant, consumer and transaction information.          
 - 2.  `2_H_Download.py`: Download the external datasets and store it in ./data/raw/external_datasets.            
 
-**Note:** For the ETL script, please enter the desire transaction snapshot, to run 4_A_simple_analysis.ipynb
+**Note:** For the ETL script, please enter the desire transaction snapshot, to run `4_A_simple_analysis.ipynb`
 
 ### EDA
 - 3.  `3_A_understand_data.ipynb`: Provide a quick inspection on the provided transaction related datasets.
