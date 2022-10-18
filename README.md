@@ -4,13 +4,14 @@
 <img src="https://github.com/MAST30034-Applied-Data-Science/generic-buy-now-pay-later-project-group-8/blob/main/plots/bnpl_logo.jpg" class="centerImage" width="450" height="300">
 <p>
 
-**IF ANY OF THE FILE PATHS FAIL TO LOAD, PLEASE GO TO https://drive.google.com/drive/folders/1h06sqKer80KU0lTFfRIPU61o6BZrk2qh?usp=sharing AND DOWNLOAD THE ENTIRE 'data' FOLDER AND REPLACE WITH CURRENT**
+
 
 ## Guide
 - [Summary Notebook](#summary-notebook)
 - [Project Structure](#project-structure)
 - [Weekly Checkpoints](#weekly-checkpoints)
 
+**NOTE: IF ANY OF THE FILE PATHS FAIL TO LOAD, PLEASE GO TO https://drive.google.com/drive/folders/1h06sqKer80KU0lTFfRIPU61o6BZrk2qh?usp=sharing AND DOWNLOAD THE ENTIRE 'data' FOLDER AND REPLACE WITH CURRENT**
 
 ## Summary Notebook
 `26_A_R_summary_notebook.ipynb` summarizes our group's solution to the BNPL problem, and presents findings.
