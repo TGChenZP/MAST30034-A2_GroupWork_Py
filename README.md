@@ -1,4 +1,5 @@
 # Generic Buy Now, Pay Later Project
+**Co-authors: Lang (Ron) Chen, Un Leng (Anderson) Kam, Yujie Li, Qirui (Cindy) Li, Haiyang (Henry) Huang**
 
 <p align="center">
 <img src="https://github.com/MAST30034-Applied-Data-Science/generic-buy-now-pay-later-project-group-8/blob/main/plots/bnpl_logo.jpg" class="centerImage" width="450" height="300">
