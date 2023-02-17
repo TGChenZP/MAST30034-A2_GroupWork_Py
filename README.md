@@ -1,6 +1,8 @@
 # Generic Buy Now, Pay Later Project
 **Co-authors: Lang (Ron) Chen, Un Leng (Anderson) Kam, Yujie Li, Qirui (Cindy) Li, Haiyang (Henry) Huang**
 
+***To best understand our work please download our [presentation](https://github.com/TGChenZP/MAST30034-A2_GroupWork__Py/blob/main/presentables/final%20presentation/ADS%20Group8%20Presentation%20Slides.pptx) at `/presentables/final presentation/ADS Group8 Presentation Slides.pptx`. Feel free to follow along with our provided [presentation script](https://github.com/TGChenZP/MAST30034-A2_GroupWork__Py/blob/main/presentables/final%20presentation/BNPL%20Presentation%20Script.pdf).***
+
 <p align="center">
 <img src="https://github.com/MAST30034-Applied-Data-Science/generic-buy-now-pay-later-project-group-8/blob/main/plots/bnpl_logo.jpg" class="centerImage" width="450" height="300">
 <p>
